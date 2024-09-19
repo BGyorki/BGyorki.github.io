@@ -1,9 +1,106 @@
-body, header, nav, footer, main{
+body, header, nav, footer, main, div, img, h1, h2, h3, ul{
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
 
+/*Style rules for mobile*/
+
+.tablet-desktop{
+	display: none;
+}
+
+body{
+	margin: 1em;
+}
+
+header{
+	text-align: center;
+
+}
+
+/*style rules for nav*/
+nav{
+	border: solid 2px #bababa;
+}
+
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+nav ul li{
+	font-size: 1.2em;
+	border-top: solid 2px #bababa;
+}
+
+nav ul li:first-child{
+	border-top: none;
+}
+
+nav li a{
+	display: block;
+	padding: .5em 1em;
+}
+
+/*style rules for main content*/
+main{
+	margin-top: 1em;
+	border: solid 2px #bababa;
+	padding: .5em;
+}
+
+.index-changelog ul li{
+	margin: 0 2em;
+}
+
+.changelog{
+	padding: .5em;
+}
+
+.changelog ul li{ 
+	margin: 0 2em;
+}
+
+.changelog-update-description{
+	margin: 1%;
+	font-size: 12px;
+}
+
+.projects-main{
+	border: none;
+	padding: 0;
+}
+
+.chapter3, .chapter4, .chapter5{
+	border: solid 2px #bababa;
+	margin: 1em 0;
+	padding: .5em;
+}
+
+.contact{
+	padding: .5em;
+}
+#contact-map{
+	text-align: center;
+}
+
+.map{
+	width: 90%;
+	height: 50%;
+	border: solid 2px #191919;
+}
+
+
+
+
+
+
+
+
+/*style rules for tablet-desktop*/ 
+
+/*
 nav ul{
 	list-style-type: none;
 }
@@ -11,3 +108,9 @@ nav ul{
 nav li{
 	display: inline-block;
 }
+
+nav li a{
+	display: block;
+	padding: .5em 0.5em;
+}
+*/
