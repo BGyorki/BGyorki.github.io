@@ -5,92 +5,93 @@ body, header, nav, footer, main, div, img, h1, h2, h3, ul{
 }
 
 /*Style rules for mobile*/
+@media screen and (max-width: 480px){
+ 
+	.tablet-desktop{
+		display: none;
+	}
 
-.tablet-desktop{
-	display: none;
+	body{
+		margin: 1em;
+	}
+
+	header{
+		text-align: center;
+
+	}
+
+	/*style rules for nav*/
+	nav{
+		border: solid 2px #bababa;
+	}
+
+	nav ul{
+		list-style-type: none;
+		text-align: center;
+	}
+
+	nav ul li{
+		font-size: 1.2em;
+		border-top: solid 2px #bababa;
+	}
+
+	nav ul li:first-child{
+		border-top: none;
+	}
+
+	nav li a{
+		display: block;
+		padding: .5em 1em;
+	}
+
+	/*style rules for main content*/
+	main{
+		margin-top: 1em;
+		border: solid 2px #bababa;
+		padding: .5em;
+	}
+
+	.index-changelog ul li{
+		margin: 0 2em;
+	}
+
+	.changelog{
+		padding: .5em;
+	}
+
+	.changelog ul li{ 
+		margin: 0 2em;
+	}
+
+	.changelog-update-description{
+		margin: 1%;
+		font-size: 12px;
+	}
+
+	.projects-main{
+		border: none;
+		padding: 0;
+	}
+
+	.chapter3, .chapter4, .chapter5{
+		border: solid 2px #bababa;
+		margin: 1em 0;
+		padding: .5em;
+	}
+
+	.contact{
+		padding: .5em;
+	}
+	#contact-map{
+		text-align: center;
+	}
+
+	.map{
+		width: 90%;
+		height: 50%;
+		border: solid 2px #191919;
+	}
 }
-
-body{
-	margin: 1em;
-}
-
-header{
-	text-align: center;
-
-}
-
-/*style rules for nav*/
-nav{
-	border: solid 2px #bababa;
-}
-
-nav ul{
-	list-style-type: none;
-	text-align: center;
-}
-
-nav ul li{
-	font-size: 1.2em;
-	border-top: solid 2px #bababa;
-}
-
-nav ul li:first-child{
-	border-top: none;
-}
-
-nav li a{
-	display: block;
-	padding: .5em 1em;
-}
-
-/*style rules for main content*/
-main{
-	margin-top: 1em;
-	border: solid 2px #bababa;
-	padding: .5em;
-}
-
-.index-changelog ul li{
-	margin: 0 2em;
-}
-
-.changelog{
-	padding: .5em;
-}
-
-.changelog ul li{ 
-	margin: 0 2em;
-}
-
-.changelog-update-description{
-	margin: 1%;
-	font-size: 12px;
-}
-
-.projects-main{
-	border: none;
-	padding: 0;
-}
-
-.chapter3, .chapter4, .chapter5{
-	border: solid 2px #bababa;
-	margin: 1em 0;
-	padding: .5em;
-}
-
-.contact{
-	padding: .5em;
-}
-#contact-map{
-	text-align: center;
-}
-
-.map{
-	width: 90%;
-	height: 50%;
-	border: solid 2px #191919;
-}
-
 
 
 
@@ -100,17 +101,137 @@ main{
 
 /*style rules for tablet-desktop*/ 
 
-/*
-nav ul{
-	list-style-type: none;
-}
+@media screen and (min-width: 796px){
 
-nav li{
-	display: inline-block;
-}
+	/*Style rules for the layout*/
+	.grid-header{
+		grid-area: header;
+	}
 
-nav li a{
-	display: block;
-	padding: .5em 0.5em;
+	.grid-nav{
+		grid-area: nav;
+	}
+
+	.grid-left{
+		grid-area: left;
+	}
+
+	.grid-main{
+		grid-area: main;
+	}
+
+	.grid-right-1{
+		grid-area: right-1;
+	}
+
+	/*grid layout on pages other than index*/
+	.grid-container{
+		display: grid;
+		grid-template-areas: 
+			'header header'
+			'left nav'
+			'left main';
+
+		grid-template-columns: 1fr 4fr;
+		grid-template-rows: 0fr 0fr 2fr;
+	}
+
+	/*grid layout for the index page*/
+	.grid-container-index{
+		display: grid;
+		grid-template-areas:
+			'header header header'
+			'left nav nav'
+			'left main right-1'
+			'left main .';
+		grid-template-columns:1fr 3fr 1fr;
+		grid-template-rows: 0fr 0fr 1fr 1fr;
+	}
+	/*end of style rules for layout*/
+	
+
+	body{
+		margin: 0 5%;
+		/* background: repeating-linear-gradient(175deg, #000, #000 25px, #0a0a0a 25px, #0a0a0a 40px); */
+		/* background-color: #19161c; */
+		background-color: #222;
+	}
+
+
+	/*Style rule for header*/
+	header{
+		text-align: center;
+		font-size: 1.25em;
+		padding: 2em;
+		color: #fff;
+	}
+
+	/*Style rules for the nav*/
+	nav{
+		border: solid 2px #bababa;
+		background-color: #0c0c0c;
+		border-left: none;
+		text-align: center;
+	}
+
+	nav ul{
+		list-style-type: none;
+	}
+
+	nav li{
+		display: inline-block;
+		padding: 1em 1em;
+	}
+
+	nav li a{
+		display: block;
+		padding: .5em .5em;
+	}
+
+	/*Style rules for main*/
+	main{
+		border: solid 2px #bababa;
+		background-color: #0c0c0c;
+		margin: 1em 0 0 1em;
+		color: #fff;
+		padding: 1em;
+	}
+
+	.left-bar{
+		border: solid 2px #bababa;
+		background-color: #0c0c0c;
+		color: #fff;
+	}
+
+	.right-1{
+		border: solid 2px #bababa;
+		background-color: #0c0c0c;
+		color: #fff;
+		padding: 1em;
+		margin: 1em 0 0 1em;
+	}
+
+	.version-update{
+		border: solid 2px #bababa;
+		background-color: #0c0c0c;
+		padding: 1em;
+		margin-bottom: 1em;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.version-update ul{
+		margin-left: 2em;
+	}
+
+	.version-update:last-child{
+		margin-bottom: 0;
+	}
+	
+	/*hides mains styling. used on: changelog*/
+	.hide-main{
+		background: none;
+		border: none;
+		padding: 0;
+	}
 }
-*/
