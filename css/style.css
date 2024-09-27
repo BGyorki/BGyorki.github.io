@@ -1,4 +1,4 @@
-body, header, nav, footer, main, div, img, h1, h2, h3, ul{
+body, header, nav, footer, main, div, img, h1, h2, h3{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -28,6 +28,8 @@ body, header, nav, footer, main, div, img, h1, h2, h3, ul{
 	nav ul{
 		list-style-type: none;
 		text-align: center;
+		margin: 0;
+		padding: 0;
 	}
 
 	nav ul li{
@@ -51,16 +53,8 @@ body, header, nav, footer, main, div, img, h1, h2, h3, ul{
 		padding: .5em;
 	}
 
-	.index-changelog ul li{
-		margin: 0 2em;
-	}
-
 	.changelog{
 		padding: .5em;
-	}
-
-	.changelog ul li{ 
-		margin: 0 2em;
 	}
 
 	.changelog-update-description{
@@ -152,11 +146,20 @@ body, header, nav, footer, main, div, img, h1, h2, h3, ul{
 
 	body{
 		margin: 0 5%;
-		/* background: repeating-linear-gradient(175deg, #000, #000 25px, #0a0a0a 25px, #0a0a0a 40px); */
+		background: repeating-linear-gradient(175deg, #000, #000 25px, #0a0a0a 25px, #0a0a0a 45px);
 		/* background-color: #19161c; */
-		background-color: #222;
+		/* background-color: #222; */
 	}
 
+	/*
+	a{
+		color: #;
+	}
+
+	a:visited{
+		color: #;
+	}
+	*/
 
 	/*Style rule for header*/
 	header{
@@ -176,16 +179,20 @@ body, header, nav, footer, main, div, img, h1, h2, h3, ul{
 
 	nav ul{
 		list-style-type: none;
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0;
 	}
 
 	nav li{
 		display: inline-block;
-		padding: 1em 1em;
+		/* padding: 1em 1em */
 	}
 
 	nav li a{
 		display: block;
-		padding: .5em .5em;
+		font-size: 1.25em;
+		padding: .5em;
 	}
 
 	/*Style rules for main*/
@@ -211,6 +218,7 @@ body, header, nav, footer, main, div, img, h1, h2, h3, ul{
 		margin: 1em 0 0 1em;
 	}
 
+	/*styling used on changelog page*/
 	.version-update{
 		border: solid 2px #bababa;
 		background-color: #0c0c0c;
@@ -228,6 +236,10 @@ body, header, nav, footer, main, div, img, h1, h2, h3, ul{
 		margin-bottom: 0;
 	}
 	
+	/*styling used on projects page*/
+
+
+
 	/*hides mains styling. used on: changelog*/
 	.hide-main{
 		background: none;
