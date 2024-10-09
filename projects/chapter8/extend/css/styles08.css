@@ -1,0 +1,41 @@
+body{
+    background-color: #ffe5dc;
+}
+
+caption{
+    padding: 2%;
+    font-size: 2em;
+    color: #792101;
+}
+
+table{
+    margin: 0 auto;
+    border: solid 3px #fd4d0c;
+    box-shadow: 5px 5px 5px #792101;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td{
+    border: solid 1px #a22c02;
+    padding: 1%;
+}
+
+tr:nth-child(odd){
+    background-color: #fe9772;
+}
+
+th{
+    background-color: #792101;
+    color: #fff;
+}
+
+main{
+    font-family: sans-serif;
+}
+
+footer{
+    padding: 2%;
+    text-align: center;
+    font-family: sans-serif;
+}
