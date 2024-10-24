@@ -136,15 +136,15 @@ body, header, nav, footer, main, div, img, h1, h2, h3{
 		box-sizing: border-box;
 	}
 
-	/*
+	
 	a{
-		color: #;
+		color: #3344ff;
 	}
 
 	a:visited{
-		color: #;
+		color: #6622ff;
 	}
-	*/
+	
 
 	body{
 		margin: 0 3%;
