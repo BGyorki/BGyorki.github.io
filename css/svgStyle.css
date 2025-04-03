@@ -1,0 +1,17 @@
+.square{
+    stroke-width: 10px;
+    stroke: url(#red-blue);
+    fill: none;
+}
+
+#circle{
+    fill: none;
+    stroke-width: 10px;
+    stroke: #0f0;
+}
+
+.triangle{
+    fill: none;
+    stroke-width: 5px;
+    stroke: url(#gradient1);
+}

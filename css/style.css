@@ -303,13 +303,19 @@ body, header, nav, footer, main, div, img, h1, h2, h3{
 		color: #fff;
 	}
 
+	.site-map{
+		list-style-type: none;
+		text-align: center;
+		padding: 0;
+	}
+
 	/*styling used on index*/
 
 	/*gives the header on index a gradient*/
 	#index-header{
 		font-family: tomorrow;
 		font-size: 2em;
-		background: linear-gradient(#000, #000 41%, #2213a5 51%, #8b7ce0 63%, #000, #000 67%, #7824a8 75%, #b77cd3 83%, #d99ef5 90%,#fff 100% );
+		background: linear-gradient(#000, #000 39%, #2213a5 51%, #8b7ce0 63%, #000, #000 67%, #7824a8 75%, #b77cd3 83%, #d99ef5 90%,#fff 100% );
 		background-clip: text;
 		color: transparent;
 		display: inline;
@@ -344,6 +350,11 @@ body, header, nav, footer, main, div, img, h1, h2, h3{
 
 	.version-update:last-child, .chapter:last-child{
 		margin-bottom: 0;
+	}
+
+	.section-title{
+		text-align: center;
+		padding: 2rem;
 	}
 
 	/*hides mains styling. used on: changelog(desktop), projects(desktop)*/
