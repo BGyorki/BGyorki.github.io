@@ -369,6 +369,17 @@ body, header, nav, footer, main, div, img, h1, h2, h3{
 		border: solid 2px #bababa;
 	}
 
+	#countdown{
+		font-size: 250%;
+		text-align: center;
+		margin: auto;
+	}
+	#countdownText{
+		font-size: 100%;
+		text-align: center;
+		margin: auto;
+	}
+
 	/* Background animation */
 	@keyframes bg-animation-1{
 		0%{background-position: 0 0;}
