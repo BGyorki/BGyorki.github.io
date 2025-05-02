@@ -11,11 +11,11 @@
 */
 
 window.addEventListener("load", function(){
-      var allSelect = this.document.querySelectorAll("form#govLinks");
+      var allSelect = this.document.querySelectorAll("form#govLinks select");
 
       for(var i = 0; i < allSelect.length; i++){
             allSelect[i].onchange = function(evt){
-                  var linkURL = evt.target;
+                  var linkURL = evt.target.value;
                   var newWin = window.open(linkURL);
             }
       }

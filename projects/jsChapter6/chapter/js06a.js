@@ -42,7 +42,7 @@ window.addEventListener("load", function(){
             orderForm.elements.subtotal.value = subtotal.toLocaleString("en-US", {style: "currency", currency: "USD"});
             
             let salesTax = subtotal * 0.05;
-            orderFormelements.salesTax.value = salesTax.toLocaleString("en-US", {style: "currency", currency: "USD"});
+            orderForm.elements.salesTax.value = salesTax.toLocaleString("en-US", {style: "currency", currency: "USD"});
             
             let totalCost = subtotal + salesTax;
             orderForm.elements.totalCost.value = totalCost.toLocaleString("en-US", {style: "currency", currency: "USD"});
