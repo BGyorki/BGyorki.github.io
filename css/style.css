@@ -370,19 +370,26 @@ body, header, nav, footer, main, div, img, h1, h2, h3{
 	}
 
 	#countdown{
-		font-size: 250%;
+		font-size: 400%;
 		text-align: center;
 		margin: auto;
+		font-family: "jersey 10";
 	}
 	#countdownText{
-		font-size: 100%;
+		font-size: 300%;
 		text-align: center;
 		margin: auto;
+		font-family: "jersey 10";
 	}
 
 	/* Background animation */
 	@keyframes bg-animation-1{
 		0%{background-position: 0 0;}
 		100%{background-position: 0 25px;}
+	}
+
+	@keyframes bg-animation-2{
+		0%{background-position: 0 0;}
+		100%{background-position: 0 -25px;}
 	}
 }
