@@ -13,8 +13,6 @@ var x = setInterval(function(){
     console.log(distance + " " + days + " " + hours + " " + minutes + " " + seconds);
 
     document.getElementById("countdown").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
-
-    
     
 
     if(distance < 0){
