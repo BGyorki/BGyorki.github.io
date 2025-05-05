@@ -1,0 +1,27 @@
+html{
+    background-color: #000CAD;
+}
+body{
+	margin: 0;
+	margin-top: 10%;
+	text-align: center;
+}
+p{
+	font-family: 'jersey 10';
+	color: #fff;
+	font-size: 200%;
+	margin: 0;
+
+}
+#end-header{
+	color: #000CAD;
+	background-color: #ABABAB;
+	display: inline-block;
+	padding: .02rem 1rem;
+	text-align: center;
+}
+#end-text{
+	text-align: left; 
+	margin-top: 2.5%;
+	margin-left: 20%;
+}
